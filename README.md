@@ -15,6 +15,60 @@ git clone https://github.com/emhayki/MeshTool.git
 ```
 
 ## Usage
+To use the tool, follow these steps:
+
+1. **Create a Mesh Instance:** Instantiate the **Mesh** object. This will be the primary object for your mesh manipulations.
+```
+obj = Mesh();
+```
+
+
+2. **Define Mesh Properties:** Set the number of element nodes (**nen**) and dimensions (**ndm**) for the mesh. In this example, a 2D mesh composed of quadrilateral elements is being created.
+```
+obj.nen = 4;
+obj.ndm = 2;
+```
+
+3. **Specify Node Coordinates:** Define the coordinates of each node in the mesh. 
+```
+obj.x(1,:)  = [0, 0];
+obj.x(2,:)  = [1, 0];
+obj.x(3,:)  = [2, 0];
+obj.x(4,:)  = [2, 1];
+obj.x(5,:)  = [1, 1];
+obj.x(6,:)  = [0, 1];
+obj.x(7,:)  = [0, 2];
+obj.x(8,:)  = [1, 2];
+```
+
+4. **Define Elements by Nodes:** Construct elements by specifying the indices of the nodes that form each element. 
+```
+obj.ix(1,:)  = [ 1,  2,  5,  6];
+obj.ix(2,:)  = [ 2,  3,  4,  5];
+obj.ix(3,:)  = [ 6,  5,  8,  7];
+```
+
+5. **Update Node and Element Counts:** Update the total number of nodes and elements.
+```
+obj.numnp = length(obj.x);
+obj.numel = length(obj.ix);
+```
+
+6. **Refine the Mesh:** Use the **split** method to refine specific elements by dividing them into smaller elements. 
+```
+obj.split(1, 2, 4); % Split between nodes 1 and 2 into 4 segments
+obj.split(2, 3, 4); % Split between nodes 2 and 3 into 4 segments
+obj.split(1, 6, 4); % Split between nodes 1 and 6 into 4 segments
+obj.split(6, 7, 4); % Split between nodes 6 and 7 into 4 segments
+```
+
+
+7. **Smooth the Mesh:** Optionally, smooth the mesh to improve the quality of the mesh after splitting. This is achieved by averaging node positions over a specified number of iterations.
+```
+obj.smoothInternal(50);
+```
+
+
 ## Examples
 ## Contributing
 Contributions are welcome! Please feel free to submit pull requests with bug fixes, improvements, or new features.
