@@ -68,6 +68,7 @@ obj.split(6, 7, 4); % Split between nodes 6 and 7 into 4 segments
 obj.smoothInternal(50);
 ```
 
+8. **Visualise the Mesh:** Display the refined mesh using the plotMesh method. To view node numbers, use `obj.plotMesh('nodes');`, to see element numbers, use `obj.plotMesh('elements');`, or to display both, use `obj.plotMesh('nodes', 'elements');`.
 
 ## Examples
 ## Contributing
