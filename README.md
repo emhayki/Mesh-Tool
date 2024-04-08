@@ -70,6 +70,7 @@ obj.smoothInternal(50);
 
 8. **Visualise the Mesh:** Display the refined mesh using the plotMesh method. To view node numbers, use `obj.plotMesh('nodes');`, to see element numbers, use `obj.plotMesh('elements');`, or to display both, use `obj.plotMesh('nodes', 'elements');`.
 
+![Mesh_Refinement](https://github.com/emhayki/MeshTool/assets/135982304/6c2481ee-0a90-4c55-99a1-0bcc4037dc24)
 
 The runnable code for this example is provided in `example1.m`. 
 
