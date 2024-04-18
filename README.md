@@ -77,9 +77,9 @@ The runnable code for this example is provided in `example1.m`.
 ## Examples
 The following table showcases various meshes that can be generated using MeshTool.
 
-|[Example 3](/example3.m) | [Example 4](/example4.m)  | [Example 5](/example5.m)  |
-| ------------ | -------------------- | -------------------- |
-|![example3](https://github.com/emhayki/MeshTool/assets/135982304/21bbb120-f848-4509-98f2-77b318a0b5a7)|![example4](https://github.com/emhayki/MeshTool/assets/135982304/f86fc5a7-e3e6-45d3-980f-cd9cb2647c4d)|![example5](https://github.com/emhayki/MeshTool/assets/135982304/425d64dc-ff37-4378-9e1c-676108530e97)|
+|[Example 3](/example3.m) | [Example 4](/example4.m)  |
+| ------------ | -------------------- | 
+|![example3](https://github.com/emhayki/MeshTool/assets/135982304/21bbb120-f848-4509-98f2-77b318a0b5a7)|![example4](https://github.com/emhayki/MeshTool/assets/135982304/f86fc5a7-e3e6-45d3-980f-cd9cb2647c4d)|
 
 
 
