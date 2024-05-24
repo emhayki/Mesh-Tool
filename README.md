@@ -6,14 +6,6 @@ MeshTool is a MATLAB class library designed for advanced mesh manipulation and a
 - **Flexible Coordinate Systems:** Supports multiple coordinate systems (Cartesian, Polar, Spherical).
 - **Visualisation:** Includes built-in methods for mesh visualisation, with options to display nodes and element numbering.
 
-## Installation
-
-To use MeshTool, clone this repository or download the `Mesh.m` file into your MATLAB working directory:
-
-```bash
-git clone https://github.com/emhayki/MeshTool.git
-```
-
 ## Usage
 To use the tool, follow these steps:
 
